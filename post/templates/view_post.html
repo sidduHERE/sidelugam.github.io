@@ -1,0 +1,8 @@
+{% extends 'blog/base.html' %}
+{% block head_title %}{{ post.title }}{% endblock %}
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+   <p> Post:{{ post.body }} </p>
+   Posted on: {{ post.posted }}
+{% endblock %}
